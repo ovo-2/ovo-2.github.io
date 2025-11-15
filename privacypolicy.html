@@ -2,17 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Privacy Policy | Basketball Bros</title>
+    <title>Privacy Policy | Ovo 2</title>
     <meta
       name="description"
-      content="Privacy Policy for Basketball Bros - How we collect, use and protect your information"
+      content="Privacy Policy for Ovo 2 - How we collect, use and protect your information"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" href="/B.png" />
     <style>
       :root {
-        --neon-primary: #ff8a00; /* Orange */
-        --neon-secondary: #0066ff; /* Blue */
+        --neon-primary: #00ff88; /* Green */
+        --neon-secondary: #8b5cf6; /* Purple */
         --dark-bg: #0a0a0a;
         --card-bg: #151515;
         --gradient: linear-gradient(
@@ -31,9 +31,45 @@
         line-height: 1.6;
       }
 
+      .navbar {
+        background: rgba(0, 0, 0, 0.95);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid var(--neon-primary);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        z-index: 1000;
+        padding: 1rem 5%;
+      }
+
+      .nav-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+
+      .logo {
+        font-size: 2rem;
+        font-weight: 700;
+        background: var(--gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .logo a {
+        text-decoration: none;
+        background: var(--gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
       .container {
         max-width: 800px;
-        margin: 0 auto;
+        margin: 100px auto 40px;
         padding: 20px;
         position: relative;
       }
@@ -79,7 +115,7 @@
       }
 
       .privacy-section ul li:before {
-        content: "🏀";
+        content: "🎮";
         position: absolute;
         left: 0;
         top: 2px;
@@ -106,6 +142,14 @@
     </style>
   </head>
   <body>
+    <nav class="navbar">
+      <div class="nav-content">
+        <div class="logo">
+          <a href="/index.html">OVO 2</a>
+        </div>
+      </div>
+    </nav>
+
     <div class="container">
       <div class="privacy-section">
         <h1>Privacy Policy</h1>
@@ -174,7 +218,7 @@
       </div>
 
       <footer class="footer">
-        <p>© 2024 Basketball Bros. All Rights Reserved.</p>
+        <p>© 2024 Ovo 2. All Rights Reserved.</p>
       </footer>
     </div>
   </body>
