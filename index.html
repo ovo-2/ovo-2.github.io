@@ -222,7 +222,21 @@
           <a href="/index.html">OVO 2</a>
         </div>
         <div class="nav-links">
-          <!-- Add navigation links here -->
+          <a
+            href="/all-games.html"
+            style="
+              color: var(--neon-primary);
+              text-decoration: none;
+              padding: 0.5rem 1.5rem;
+              transition: all 0.3s;
+              border: 2px solid var(--neon-primary);
+              border-radius: 25px;
+              font-weight: 600;
+            "
+            onmouseover="this.style.background='var(--neon-primary)'; this.style.color='#000';"
+            onmouseout="this.style.background='transparent'; this.style.color='var(--neon-primary)';"
+            >All Games</a
+          >
         </div>
       </div>
     </nav>
@@ -362,20 +376,23 @@
                 itemscope
                 itemtype="https://schema.org/VideoGame"
               >
-                <img
-                  src="/ovo1/icon-256.png"
-                  alt="Ovo 1 - Free Online Platformer Game"
-                  class="game-image"
-                  loading="lazy"
-                  decoding="async"
-                  itemprop="image"
-                />
+                <a
+                  href="/ovo1/index.html"
+                  class="game-image-wrapper"
+                  onclick="event.preventDefault(); openGameModal('/ovo1/index.html', 'Ovo 1');"
+                  data-game-title="Ovo 1"
+                >
+                  <img
+                    src="/ovo1/icon-256.png"
+                    alt="Ovo 1 - Free Online Platformer Game"
+                    class="game-image"
+                    loading="lazy"
+                    decoding="async"
+                    itemprop="image"
+                  />
+                </a>
                 <div class="game-info">
                   <h3 class="game-title">Ovo 1</h3>
-                  <p class="game-desc">
-                    Ovo 1 is the original platformer game with challenging
-                    levels and exciting gameplay.
-                  </p>
                   <a href="/ovo1/index.html" class="play-btn">Play Now</a>
                 </div>
               </div>
@@ -386,22 +403,24 @@
                 itemscope
                 itemtype="https://schema.org/VideoGame"
               >
-                <img
-                  src="/ovo2.png"
-                  alt="Ovo 2 - Free Online Platformer Game"
-                  class="game-image"
-                  loading="lazy"
-                  decoding="async"
-                  fetchpriority="high"
-                  itemprop="image"
-                />
+                <a
+                  href="/ovo2/index.html"
+                  class="game-image-wrapper"
+                  onclick="event.preventDefault(); openGameModal('/ovo2/index.html', 'Ovo 2');"
+                  data-game-title="Ovo 2"
+                >
+                  <img
+                    src="/ovo2.png"
+                    alt="Ovo 2 - Free Online Platformer Game"
+                    class="game-image"
+                    loading="lazy"
+                    decoding="async"
+                    fetchpriority="high"
+                    itemprop="image"
+                  />
+                </a>
                 <div class="game-info">
                   <h3 class="game-title">Ovo 2</h3>
-                  <p class="game-desc">
-                    Ovo 2 is an exciting platformer game with challenging
-                    levels. Jump, run, and overcome obstacles in this thrilling
-                    adventure!
-                  </p>
                   <a href="/ovo2/index.html" class="play-btn">Play Now</a>
                 </div>
               </div>
@@ -412,20 +431,23 @@
                 itemscope
                 itemtype="https://schema.org/VideoGame"
               >
-                <img
-                  src="/vex3/vex3.png"
-                  alt="Vex 3 - Free Online Platformer Game"
-                  class="game-image"
-                  loading="lazy"
-                  decoding="async"
-                  itemprop="image"
-                />
+                <a
+                  href="/vex3/index.html"
+                  class="game-image-wrapper"
+                  onclick="event.preventDefault(); openGameModal('/vex3/index.html', 'Vex 3');"
+                  data-game-title="Vex 3"
+                >
+                  <img
+                    src="/vex3/vex3.png"
+                    alt="Vex 3 - Free Online Platformer Game"
+                    class="game-image"
+                    loading="lazy"
+                    decoding="async"
+                    itemprop="image"
+                  />
+                </a>
                 <div class="game-info">
                   <h3 class="game-title">Vex 3</h3>
-                  <p class="game-desc">
-                    Vex 3 is an exciting platformer game with challenging
-                    obstacles and smooth controls.
-                  </p>
                   <a href="/vex3/index.html" class="play-btn">Play Now</a>
                 </div>
               </div>
@@ -436,20 +458,23 @@
                 itemscope
                 itemtype="https://schema.org/VideoGame"
               >
-                <img
-                  src="/vex4/vex4.png"
-                  alt="Vex 4 - Free Online Platformer Game"
-                  class="game-image"
-                  loading="lazy"
-                  decoding="async"
-                  itemprop="image"
-                />
+                <a
+                  href="/vex4/index.html"
+                  class="game-image-wrapper"
+                  onclick="event.preventDefault(); openGameModal('/vex4/index.html', 'Vex 4');"
+                  data-game-title="Vex 4"
+                >
+                  <img
+                    src="/vex4/vex4.png"
+                    alt="Vex 4 - Free Online Platformer Game"
+                    class="game-image"
+                    loading="lazy"
+                    decoding="async"
+                    itemprop="image"
+                  />
+                </a>
                 <div class="game-info">
                   <h3 class="game-title">Vex 4</h3>
-                  <p class="game-desc">
-                    Vex 4 continues the platformer adventure with new levels and
-                    challenges.
-                  </p>
                   <a href="/vex4/index.html" class="play-btn">Play Now</a>
                 </div>
               </div>
@@ -460,20 +485,23 @@
                 itemscope
                 itemtype="https://schema.org/VideoGame"
               >
-                <img
-                  src="/vex5/vex5.jpeg"
-                  alt="Vex 5 - Free Online Platformer Game"
-                  class="game-image"
-                  loading="lazy"
-                  decoding="async"
-                  itemprop="image"
-                />
+                <a
+                  href="/vex5/index.html"
+                  class="game-image-wrapper"
+                  onclick="event.preventDefault(); openGameModal('/vex5/index.html', 'Vex 5');"
+                  data-game-title="Vex 5"
+                >
+                  <img
+                    src="/vex5/vex5.jpeg"
+                    alt="Vex 5 - Free Online Platformer Game"
+                    class="game-image"
+                    loading="lazy"
+                    decoding="async"
+                    itemprop="image"
+                  />
+                </a>
                 <div class="game-info">
                   <h3 class="game-title">Vex 5</h3>
-                  <p class="game-desc">
-                    Vex 5 brings new challenges and exciting platformer
-                    gameplay.
-                  </p>
                   <a href="/vex5/index.html" class="play-btn">Play Now</a>
                 </div>
               </div>
@@ -484,20 +512,23 @@
                 itemscope
                 itemtype="https://schema.org/VideoGame"
               >
-                <img
-                  src="/vex6/assets/images/logo.png"
-                  alt="Vex 6 - Free Online Platformer Game"
-                  class="game-image"
-                  loading="lazy"
-                  decoding="async"
-                  itemprop="image"
-                />
+                <a
+                  href="/vex6/index.html"
+                  class="game-image-wrapper"
+                  onclick="event.preventDefault(); openGameModal('/vex6/index.html', 'Vex 6');"
+                  data-game-title="Vex 6"
+                >
+                  <img
+                    src="/vex6/assets/images/logo.png"
+                    alt="Vex 6 - Free Online Platformer Game"
+                    class="game-image"
+                    loading="lazy"
+                    decoding="async"
+                    itemprop="image"
+                  />
+                </a>
                 <div class="game-info">
                   <h3 class="game-title">Vex 6</h3>
-                  <p class="game-desc">
-                    Vex 6 offers challenging levels and smooth platformer
-                    action.
-                  </p>
                   <a href="/vex6/index.html" class="play-btn">Play Now</a>
                 </div>
               </div>
@@ -508,20 +539,23 @@
                 itemscope
                 itemtype="https://schema.org/VideoGame"
               >
-                <img
-                  src="/vex7/assets/images/logo.png"
-                  alt="Vex 7 - Free Online Platformer Game"
-                  class="game-image"
-                  loading="lazy"
-                  decoding="async"
-                  itemprop="image"
-                />
+                <a
+                  href="/vex7/index.html"
+                  class="game-image-wrapper"
+                  onclick="event.preventDefault(); openGameModal('/vex7/index.html', 'Vex 7');"
+                  data-game-title="Vex 7"
+                >
+                  <img
+                    src="/vex7/assets/images/logo.png"
+                    alt="Vex 7 - Free Online Platformer Game"
+                    class="game-image"
+                    loading="lazy"
+                    decoding="async"
+                    itemprop="image"
+                  />
+                </a>
                 <div class="game-info">
                   <h3 class="game-title">Vex 7</h3>
-                  <p class="game-desc">
-                    Vex 7 continues the epic platformer series with new
-                    adventures.
-                  </p>
                   <a href="/vex7/index.html" class="play-btn">Play Now</a>
                 </div>
               </div>
@@ -532,19 +566,23 @@
                 itemscope
                 itemtype="https://schema.org/VideoGame"
               >
-                <img
-                  src="/vex-8/logo.png"
-                  alt="Vex 8 - Free Online Platformer Game"
-                  class="game-image"
-                  loading="lazy"
-                  decoding="async"
-                  itemprop="image"
-                />
+                <a
+                  href="/vex-8/index.html"
+                  class="game-image-wrapper"
+                  onclick="event.preventDefault(); openGameModal('/vex-8/index.html', 'Vex 8');"
+                  data-game-title="Vex 8"
+                >
+                  <img
+                    src="/vex-8/logo.png"
+                    alt="Vex 8 - Free Online Platformer Game"
+                    class="game-image"
+                    loading="lazy"
+                    decoding="async"
+                    itemprop="image"
+                  />
+                </a>
                 <div class="game-info">
                   <h3 class="game-title">Vex 8</h3>
-                  <p class="game-desc">
-                    Vex 8 brings new levels and exciting platformer challenges.
-                  </p>
                   <a href="/vex-8/index.html" class="play-btn">Play Now</a>
                 </div>
               </div>
@@ -555,20 +593,23 @@
                 itemscope
                 itemtype="https://schema.org/VideoGame"
               >
-                <img
-                  src="/vex-9/logo.png"
-                  alt="Vex 9 - Free Online Platformer Game"
-                  class="game-image"
-                  loading="lazy"
-                  decoding="async"
-                  itemprop="image"
-                />
+                <a
+                  href="/vex-9/index.html"
+                  class="game-image-wrapper"
+                  onclick="event.preventDefault(); openGameModal('/vex-9/index.html', 'Vex 9');"
+                  data-game-title="Vex 9"
+                >
+                  <img
+                    src="/vex-9/logo.png"
+                    alt="Vex 9 - Free Online Platformer Game"
+                    class="game-image"
+                    loading="lazy"
+                    decoding="async"
+                    itemprop="image"
+                  />
+                </a>
                 <div class="game-info">
                   <h3 class="game-title">Vex 9</h3>
-                  <p class="game-desc">
-                    Vex 9 is the latest installment with challenging platformer
-                    levels.
-                  </p>
                   <a href="/vex-9/index.html" class="play-btn">Play Now</a>
                 </div>
               </div>
@@ -579,20 +620,23 @@
                 itemscope
                 itemtype="https://schema.org/VideoGame"
               >
-                <img
-                  src="/vex-3-xmas/logo.png"
-                  alt="Vex 3 Xmas - Free Online Platformer Game"
-                  class="game-image"
-                  loading="lazy"
-                  decoding="async"
-                  itemprop="image"
-                />
+                <a
+                  href="/vex-3-xmas/index.html"
+                  class="game-image-wrapper"
+                  onclick="event.preventDefault(); openGameModal('/vex-3-xmas/index.html', 'Vex 3 Xmas');"
+                  data-game-title="Vex 3 Xmas"
+                >
+                  <img
+                    src="/vex-3-xmas/logo.png"
+                    alt="Vex 3 Xmas - Free Online Platformer Game"
+                    class="game-image"
+                    loading="lazy"
+                    decoding="async"
+                    itemprop="image"
+                  />
+                </a>
                 <div class="game-info">
                   <h3 class="game-title">Vex 3 Xmas</h3>
-                  <p class="game-desc">
-                    Vex 3 Xmas special edition with festive holiday-themed
-                    levels.
-                  </p>
                   <a href="/vex-3-xmas/index.html" class="play-btn">Play Now</a>
                 </div>
               </div>
@@ -603,20 +647,23 @@
                 itemscope
                 itemtype="https://schema.org/VideoGame"
               >
-                <img
-                  src="/vex-x3m/logo.png"
-                  alt="Vex X3M - Free Online Platformer Game"
-                  class="game-image"
-                  loading="lazy"
-                  decoding="async"
-                  itemprop="image"
-                />
+                <a
+                  href="/vex-x3m/index.html"
+                  class="game-image-wrapper"
+                  onclick="event.preventDefault(); openGameModal('/vex-x3m/index.html', 'Vex X3M');"
+                  data-game-title="Vex X3M"
+                >
+                  <img
+                    src="/vex-x3m/logo.png"
+                    alt="Vex X3M - Free Online Platformer Game"
+                    class="game-image"
+                    loading="lazy"
+                    decoding="async"
+                    itemprop="image"
+                  />
+                </a>
                 <div class="game-info">
                   <h3 class="game-title">Vex X3M</h3>
-                  <p class="game-desc">
-                    Vex X3M offers extreme platformer challenges and exciting
-                    gameplay.
-                  </p>
                   <a href="/vex-x3m/index.html" class="play-btn">Play Now</a>
                 </div>
               </div>
@@ -627,20 +674,23 @@
                 itemscope
                 itemtype="https://schema.org/VideoGame"
               >
-                <img
-                  src="/vex-x3m-2/logo.png"
-                  alt="Vex X3M 2 - Free Online Platformer Game"
-                  class="game-image"
-                  loading="lazy"
-                  decoding="async"
-                  itemprop="image"
-                />
+                <a
+                  href="/vex-x3m-2/index.html"
+                  class="game-image-wrapper"
+                  onclick="event.preventDefault(); openGameModal('/vex-x3m-2/index.html', 'Vex X3M 2');"
+                  data-game-title="Vex X3M 2"
+                >
+                  <img
+                    src="/vex-x3m-2/logo.png"
+                    alt="Vex X3M 2 - Free Online Platformer Game"
+                    class="game-image"
+                    loading="lazy"
+                    decoding="async"
+                    itemprop="image"
+                  />
+                </a>
                 <div class="game-info">
                   <h3 class="game-title">Vex X3M 2</h3>
-                  <p class="game-desc">
-                    Vex X3M 2 continues the extreme platformer series with new
-                    challenges.
-                  </p>
                   <a href="/vex-x3m-2/index.html" class="play-btn">Play Now</a>
                 </div>
               </div>
@@ -651,20 +701,23 @@
                 itemscope
                 itemtype="https://schema.org/VideoGame"
               >
-                <img
-                  src="/vex-hyper-dash/logo.png"
-                  alt="Vex Hyper Dash - Free Online Platformer Game"
-                  class="game-image"
-                  loading="lazy"
-                  decoding="async"
-                  itemprop="image"
-                />
+                <a
+                  href="/vex-hyper-dash/index.html"
+                  class="game-image-wrapper"
+                  onclick="event.preventDefault(); openGameModal('/vex-hyper-dash/index.html', 'Vex Hyper Dash');"
+                  data-game-title="Vex Hyper Dash"
+                >
+                  <img
+                    src="/vex-hyper-dash/logo.png"
+                    alt="Vex Hyper Dash - Free Online Platformer Game"
+                    class="game-image"
+                    loading="lazy"
+                    decoding="async"
+                    itemprop="image"
+                  />
+                </a>
                 <div class="game-info">
                   <h3 class="game-title">Vex Hyper Dash</h3>
-                  <p class="game-desc">
-                    Vex Hyper Dash offers fast-paced platformer action with
-                    hyper speed gameplay.
-                  </p>
                   <a href="/vex-hyper-dash/index.html" class="play-btn"
                     >Play Now</a
                   >

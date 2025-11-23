@@ -36,6 +36,14 @@
     <priority>0.3</priority>
   </url>
   
+  <!-- All Games Page -->
+  <url>
+    <loc>https://ovo-2.github.io/all-games.html</loc>
+    <lastmod>2025-01-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
   <!-- Games -->
   <url>
     <loc>https://ovo-2.github.io/ovo1/index.html</loc>
